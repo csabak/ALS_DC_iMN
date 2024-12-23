@@ -127,7 +127,7 @@ Seahorse and PercevalHR
 Reproducing the Analyses
 Clone this repository:
 
-git clone https://github.com/YourUsername/ALS-iMN-mitochondria.git
+git clone https://github.com/csabak/ALS_DC_iMN.git
 cd ALS-iMN-mitochondria
 Set up environment (conda or pip):
 
