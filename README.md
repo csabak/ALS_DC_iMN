@@ -1,4 +1,4 @@
-Investigation of Mitochondrial and Viability Phenotypes in Fibroblast-Derived Motor Neurons
+# Investigation of Mitochondrial and Viability Phenotypes in Fibroblast-Derived Motor Neurons
 This repository contains the code and analysis pipelines accompanying the paper:
 
 Investigation of mitochondrial and viability phenotypes in motor neurons derived by direct conversion of fibroblasts from familial ALS subjects
