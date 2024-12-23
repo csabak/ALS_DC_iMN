@@ -35,20 +35,19 @@ The main goals of these scripts/notebooks are to automate, standardize, and repr
 Repository Structure
 Below is a general outline of the repository structure. File and folder names may vary depending on your local clone.
 
-bash
-Copy code
+<details> <summary><strong>Directory Structure</strong></summary>
 .
-├── data/                    
+├── data/
 │   ├── example_images/            # Example image sets for testing the pipelines
 │   ├── seahorse_data/            # Example XF data for OCR/ECAR calculations
 │   └── ...
 ├── notebooks/
-│   ├── 01_iMN_classification.ipynb  # Example Jupyter notebook for ResNet-50 classification
-│   ├── 02_YOLOv8_detection.ipynb    # YOLOv8-based iMN detection & tracking
-│   ├── 03_survival_analysis.ipynb   # Survival analysis (Kaplan-Meier, Cox)
-│   ├── 04_mito_analysis.ipynb       # Mitochondrial morphology, TMRM, motility
-│   ├── 05_seahorse_analysis.ipynb   # OCR/ECAR data import and processing
-│   ├── 06_percevalHR_analysis.ipynb # ATP/ADP ratio analysis
+│   ├── 01_iMN_classification.ipynb   # Example Jupyter notebook for ResNet-50 classification
+│   ├── 02_YOLOv8_detection.ipynb     # YOLOv8-based iMN detection & tracking
+│   ├── 03_survival_analysis.ipynb    # Survival analysis (Kaplan-Meier, Cox)
+│   ├── 04_mito_analysis.ipynb        # Mitochondrial morphology, TMRM, motility
+│   ├── 05_seahorse_analysis.ipynb    # OCR/ECAR data import and processing
+│   ├── 06_percevalHR_analysis.ipynb  # ATP/ADP ratio analysis
 │   └── ...
 ├── src/
 │   ├── models/                      # Trained models (ResNet-50, YOLOv8 weights)
@@ -62,6 +61,7 @@ Copy code
 ├── requirements.txt                 # Alternatively, pip install requirements
 ├── README.md                        # This file
 └── LICENSE                          # License for usage
+</details>
 Dependencies
 We recommend using conda or a Python virtual environment to manage dependencies:
 
@@ -76,15 +76,13 @@ CellProfiler (optional, for batch segmentation)
 ImageJ/Fiji (optional, macros for custom segmentation steps)
 Install with either:
 
-bash
-Copy code
+
 # Using conda environment
 conda env create -f environment.yml
 conda activate als-imn-env
 or
 
-bash
-Copy code
+
 # Using pip
 pip install -r requirements.txt
 Data Preparation
@@ -128,22 +126,18 @@ Seahorse and PercevalHR
 06_percevalHR_analysis.ipynb: Processes time-lapse images of PercevalHR-labeled cells to extract ATP/ADP ratios.
 Reproducing the Analyses
 Clone this repository:
-bash
-Copy code
+
 git clone https://github.com/YourUsername/ALS-iMN-mitochondria.git
 cd ALS-iMN-mitochondria
 Set up environment (conda or pip):
-bash
-Copy code
+
 conda env create -f environment.yml
 conda activate als-imn-env
 or
-bash
-Copy code
+
 pip install -r requirements.txt
 Open the notebooks in JupyterLab or Jupyter Notebook:
-bash
-Copy code
+
 jupyter lab
 Run the notebooks in order:
 01_iMN_classification.ipynb
@@ -163,7 +157,6 @@ Investigation of mitochondrial and viability phenotypes in motor neurons derived
 BibTeX entry (placeholder):
 
 bibtex
-Copy code
 @article{Konrad202X,
   title={Investigation of mitochondrial and viability phenotypes in motor neurons derived by direct conversion of fibroblasts from familial ALS subjects},
   author={Konrad, Csaba and Woo, Evan and Tasnim, Faiza and Kawamata, Hibiki and Manfredi, Giovanni},
